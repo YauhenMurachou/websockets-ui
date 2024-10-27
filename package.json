@@ -1,21 +1,33 @@
 {
     "name": "ws_task",
     "version": "1.0.0",
-    "description": "Template for the WebSocket remote control task",
+    "description": "RS School Battleship task",
     "main": "index.js",
     "type": "module",
     "scripts": {
         "start": "node ./index.js",
         "start:dev": "nodemon ./index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+				"lint": "eslint . --ext .ts",
+				"lint:fix": "eslint . --ext .ts --fix",
+				"format": "prettier --write \"src/**/*.ts\""
     },
-    "author": "Andrei Auchynnikau",
+    "author": "Yauhen Murachou",
     "keywords": [],
     "license": "ISC",
     "devDependencies": {
-        "nodemon": "^2.0.16"
+        "nodemon": "^2.0.16",
+				"@types/node": "^18.0.0",
+				"@types/ws": "^8.0.0",
+				"eslint": "^8.0.0",
+				"eslint-config-prettier": "^8.0.0",
+				"eslint-plugin-prettier": "^4.0.0",
+				"prettier": "^2.0.0",
+				"ts-node": "^10.0.0",
+				"typescript": "^4.0.0"
     },
     "dependencies": {
+			"dotenv": "^16.4.5",
         "ws": "^8.8.0"
     }
 }
