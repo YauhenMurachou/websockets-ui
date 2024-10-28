@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "RS School Battleship task",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "start:dev": "nodemon ./index.ts",
+    "start": "nodemon ./index.ts",
 		"build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
